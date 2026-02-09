@@ -126,20 +126,20 @@ SG/
 ├── skygeni_sales_data.csv                 # Dataset (5,000 deals)
 │
 ├── part1_problem_framing.txt              # [REPLACED BY ENHANCED VERSION]
-├── report_part1_enhanced.txt              # Part 1: Problem Framing (comprehensive)
+├── report_part1_enhanced.txt              # ✅ Part 1: Problem Framing (comprehensive)
 │
-├── part2_eda_enhanced.ipynb               # Part 2: EDA & Insights (Jupyter notebook)
+├── part2_eda_enhanced.ipynb               # ✅ Part 2: EDA & Insights (Jupyter notebook)
 │
-├── part3_win_rate_analysis_enhanced.ipynb # Part 3: Win Rate Driver Analysis (Option B)
+├── part3_win_rate_analysis_enhanced.ipynb # ✅ Part 3: Win Rate Driver Analysis (Option B)
 │
-├── part4_system_design.md                 # Part 4: Sales Intelligence System Design
+├── part4_system_design.md                 # ✅ Part 4: Sales Intelligence System Design
 │
-└── part5_reflection.md                    # Part 5: Critical Reflection & Self-Assessment
+└── part5_reflection.md                    # ✅ Part 5: Critical Reflection & Self-Assessment
 ```
 
 ---
 
-##  Setup Instructions
+## 🛠️ Setup Instructions
 
 ### Prerequisites
 
@@ -556,3 +556,5 @@ cat part5_reflection.md
 ---
 
 **End of README**
+
+*Thank you for reviewing this submission. I look forward to discussing this work and exploring how it could be applied to real SkyGeni customer problems.*

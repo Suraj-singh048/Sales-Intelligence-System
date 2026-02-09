@@ -1,0 +1,22 @@
+# SkyGeni Sales Intelligence Challenge - Python Dependencies
+# Python Version: 3.11+
+
+# Core Data Analysis
+pandas==2.1.4
+numpy==1.26.3
+
+# Machine Learning
+scikit-learn==1.4.0
+
+# Visualization
+matplotlib==3.8.2
+seaborn==0.13.1
+
+# Jupyter Environment
+jupyter==1.0.0
+notebook==7.0.6
+ipykernel==6.28.0
+
+# Utilities
+python-dateutil==2.8.2
+pytz==2023.3

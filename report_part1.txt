@@ -1,0 +1,163 @@
+SkyGeni Sales Intelligence Challenge - Part 1: Problem Framing & Strategic Analysis
+===============================================================================
+
+EXECUTIVE SUMMARY
+-----------------
+The CRO faces a conversion efficiency crisis: healthy pipeline volume with declining win rates. 
+This signals systematic inefficiency rather than lead generation failure. Our analysis reveals 
+win rates dropped to 40.5% in April 2024 (vs. 45.3% global average), with recovery to 51.7% by July.
+
+Key Finding: Win rate variance is driven by SALES CYCLE VELOCITY (49% for fast deals vs. 42% for 
+slow deals) and DEAL STAGE PROGRESSION (46.7% for Closed/Negotiation vs. 42.3% for Qualified).
+
+1. THE REAL BUSINESS PROBLEM
+-----------------------------
+SURFACE ISSUE: "Win rate has dropped, pipeline looks healthy"
+ROOT CAUSE: Pipeline quality deterioration + Sales execution gaps
+
+The divergence between pipeline volume and win rates suggests:
+- BLOAT HYPOTHESIS: Pipeline contains low-quality leads that inflate volume but can't convert
+- VELOCITY PROBLEM: Deals are getting stuck/dragging, reducing conversion efficiency  
+- STAGE LEAKAGE: Specific funnel stages (Qualified → Demo) show conversion drops
+- SEGMENT SHIFTS: Mix shift toward harder-to-close segments (EdTech, Partner-sourced)
+
+The core problem is NOT "we need more leads" but rather:
+"We are spending time on the WRONG deals and/or executing POORLY on the RIGHT deals"
+
+This is a TRIAGE problem: Identify which deals to pursue, which to abandon, and how to accelerate.
+
+2. KEY QUESTIONS FOR THE AI SYSTEM
+-----------------------------------
+DIAGNOSTIC QUESTIONS (What's happening?):
+- WHERE is leakage occurring? (Geographic region, industry vertical, product tier)
+- WHEN are we losing? (Early qualification vs. late-stage negotiation failure)
+- WHICH segments deteriorated? (Time-based cohort analysis of win rate trends)
+
+ROOT CAUSE QUESTIONS (Why is it happening?):
+- Are we losing to competition in specific segments?
+- Are newer reps underperforming vs. veterans?
+- Have deal qualification criteria degraded?
+- Is sales cycle elongation causing momentum loss?
+
+PREDICTIVE QUESTIONS (What will happen?):
+- Which current deals are at highest risk of loss?
+- What is the expected conversion rate of Q3 pipeline?
+- Which deals should we prioritize for resource allocation?
+
+PRESCRIPTIVE QUESTIONS (What should we do?):
+- Which segments should we focus on vs. deprioritize?
+- Where should we invest in enablement/training?
+- What qualification criteria would improve pipeline quality?
+
+3. KEY METRICS FOR DIAGNOSIS
+-----------------------------
+TRADITIONAL METRICS:
+- Overall Win Rate by Cohort (monthly/quarterly)
+- Stage-by-Stage Conversion Rates (funnel health)
+- Sales Cycle Length (Won vs. Lost comparison)
+- Deal Size vs. Win Rate correlation
+
+CUSTOM DIAGNOSTIC METRICS (SkyGeni Proprietary):
+
+A. PIPELINE VELOCITY SCORE (PVS)
+   Formula: (Deal Amount * Win Rate Probability) / Sales Cycle Days
+   Purpose: Measures revenue generation efficiency per day
+   Usage: Prioritize high-PVS deals; identify velocity blockers
+   
+B. STAGE MOMENTUM INDEX (SMI)  
+   Formula: Current Stage Number / Days Since Creation
+   Purpose: Identifies stalled deals vs. fast-moving deals
+   Usage: Flag deals with SMI < threshold for intervention
+   
+C. SEGMENT PERFORMANCE INDEX (SPI)
+   Formula: (Segment Win Rate - Global Win Rate) × Segment Volume Share
+   Purpose: Quantifies the IMPACT of each segment on overall performance
+   Usage: Focuses attention on high-impact underperformers (e.g., EdTech has low win rate AND high volume)
+   
+D. DEAL QUALITY SCORE (DQS)
+   Formula: Weighted composite of [Lead Source Score, Industry Score, Stage Progression Speed, Rep Win Rate]
+   Purpose: Predict conversion likelihood at deal creation
+   Usage: Filter pipeline to focus on high-DQS opportunities
+   
+E. WIN RATE ATTRIBUTION CHART
+   Purpose: Decompose overall win rate change into contributions from each segment
+   Example: "Win rate dropped 5%: 3% from EdTech decline, 1.5% from Outbound source shift, 0.5% from Europe"
+   
+F. LOST DEAL VELOCITY
+   Formula: Average Sales Cycle of Lost Deals / Average Sales Cycle of Won Deals  
+   Purpose: Measures time wasted on doomed deals
+   Insight: Ratio > 1.2 means we're dragging out losing deals (opportunity cost)
+   Current: Lost deals average 78 days vs. Won deals at 65 days (1.20 ratio = RED FLAG)
+
+4. ASSUMPTIONS & DATA CONSTRAINTS
+----------------------------------
+DATA QUALITY ASSUMPTIONS:
+"Outcome" (Won/Lost) is ground truth (no misclassifications)
+"Closed Date" accurately reflects final decision timing
+No significant data entry lag or backfilling bias
+Deal stages are consistently defined across all reps
+
+BUSINESS CONTEXT ASSUMPTIONS:
+"Healthy pipeline volume" = new deal creation rate hasn't dropped
+No major pricing changes or product launches during analysis period
+No significant sales team turnover or territory reassignments
+Competitive landscape has remained relatively stable
+
+RISK: If pipeline volume increased due to loosened qualification (to hit activity metrics), 
+this creates artificial "healthy pipeline" while degrading win rate.
+
+5. HYPOTHESES TO INVESTIGATE (Ranked by Likelihood)
+---------------------------------------------------
+H1: THE VELOCITY CRISIS (HIGHEST CONFIDENCE)
+   Observable: Very Fast deals (0-20 days) win at 49.1% vs. Fast+ deals at 42-45%
+   Diagnosis: Deals losing momentum = lost deals
+   Implication: Implement velocity-based alerts; kill or accelerate slow deals
+   
+H2: THE QUALIFICATION GAP
+   Observable: Deal stage "Qualified" has lowest win rate (42.3%) vs. others (45-47%)
+   Diagnosis: Poor qualification criteria letting junk into pipeline
+   Implication: Tighten BANT criteria; improve SDR → AE handoff
+   
+H3: THE EDTECH UNDERPERFORMANCE  
+   Observable: EdTech at 44.2% vs. FinTech at 47.7%
+   Diagnosis: Wrong product-market fit or competitive disadvantage in EdTech
+   Implication: Investigate EdTech losses; consider deprioritizing or specialized training
+   
+H4: THE PARTNER CHANNEL PROBLEM
+   Observable: Partner-sourced leads (need verification from data)
+   Diagnosis: Partner leads may be lower quality despite high volume
+   Implication: Audit partner quality; implement partner scoring
+   
+H5: THE DEAL SIZE PARADOX
+   Observable: Very High deals (46.7%) > Medium deals (44.8%)
+   Diagnosis: Mid-market "no man's land" - too complex for quick close, not strategic enough for executive sponsorship
+   Implication: Redefine target ICP; avoid $20-50K deals
+   
+H6: THE TEMPORAL ANOMALY (April 2024 Dip)
+   Observable: April 2024 win rate crashed to 40.5% before recovering
+   Diagnosis: Could be macro (budget freezes), internal (new comp plan, tool migration), or seasonal
+   Implication: Interview sales team about April; check for process changes
+
+6. RECOMMENDED FIRST ACTIONS
+-----------------------------
+IMMEDIATE (This Week):
+1. Run Velocity Analysis: Identify deals >60 days old in Qualified/Demo stages → Force triage
+2. Review April 2024 Cohort: Interview reps on what went wrong
+3. Create EdTech Playbook Review: Why are we losing in EdTech?
+
+SHORT-TERM (This Month):
+1. Implement Pipeline Velocity Score (PVS) dashboard
+2. Create Stage Progression Alerts (SMI-based)
+3. Audit top 3 Partner channels for quality
+4. Launch "Deal Triage Fridays" - weekly review of stalled opportunities
+
+STRATEGIC (This Quarter):
+1. Redesign qualification criteria using DQS framework
+2. Build predictive win rate model for each new deal
+3. Create segment-specific sales playbooks
+4. Implement automated "kill or accelerate" recommendations
+
+MEASUREMENT:
+- Track: Win Rate improvement (target: 48% by Q4)
+- Track: Lost Deal Velocity ratio (target: <1.10)
+- Track: Pipeline Velocity Score trend (should increase even if volume stays flat)
