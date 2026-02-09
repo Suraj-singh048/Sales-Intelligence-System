@@ -1,11 +1,18 @@
 # Sales Intelligence System
 
-## Documentation
+## Overview
+This project aims to provide insights into sales data through various analyses and visualizations.
 
-This repository contains the following parts:
+## File References
+- report_part1.txt
+- part2_eda.ipynb
+- part3_win_rate_analysis.ipynb
 
-1. **report_part1.txt**: The first part of the report.
-2. **part2_eda.ipynb**: The exploratory data analysis.
-3. **part3_win_rate_analysis.ipynb**: The win rate analysis.
+## Usage
+1. To run the exploratory data analysis: 
+   - Execute `part2_eda.ipynb` in Jupyter Notebook.
+2. For the report, refer to `report_part1.txt`.
+3. Analyze win rates using `part3_win_rate_analysis.ipynb`.
 
-Make sure to refer to these files for detailed insights and analysis.
+## License
+This project is licensed under the MIT License.
